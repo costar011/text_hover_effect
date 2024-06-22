@@ -1,43 +1,26 @@
 @import url("http://font.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Bebas Neue", cursive;
-}
-
 main {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 p {
-  font-size: 15em;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 200px;
+  font-weight: 900;
+  
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  cursor: pointer;
   color: rgb(24, 24, 24);
   position: relative;
 }
 
-p ::before,
-p::after {
-  content: "HELLO";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  z-index: -1;
-  transition: all .4s;
-}
-
-p:hover ::before {
-  transform: translate(-5px, -5px);
-  text-shadow: 4px 4px 20px #ff0101;
-}
-p:hover ::after {
-  transform: translate(5px, 5px);
-  text-shadow: 4px 4px 20px #351fff;
+p:hover {
+  text-shadow: 4px 3px 0px #ffffff, -5px -4px 20px #f21ee4,
+    -8px 10px 20px #0935f8;
 }
